@@ -36,11 +36,28 @@ $H_A$: The average number of pushups done by line players is statistically diffe
 <!--Divide this section into two sub-sections: One for your descriptive results and one for your inferential results.!-->
 
 ## Descriptive Results
+```{r}
+favstats(pushups~position,data=mydata)
+```
+Q1 of line is smaller than Q1 Skills. Q3 is higher on both but skills are always higher than line.
+
 
 ### Graphical Descriptive Results
 
 <!--Graphical results here. Make sure to show your code. Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too. Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+
+```{r}
+ggplot(mydata, aes(x = position, y = pushups)) +
+geom_boxplot() +
+xlab("Position") +
+ylab("Pushups") +
+ggtitle("Boxplot of Pushups by Position") +
+theme(plot.title = element_text(size = 16, hjust = 0.5))
+```
+
+
+The line players are doing less push ups than the skill players. The skill players are working harder.
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
