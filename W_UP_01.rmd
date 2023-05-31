@@ -39,7 +39,7 @@ $H_A$: The average number of pushups done by line players is statistically diffe
 ```{r}
 favstats(pushups~position,data=mydata)
 ```
-Q1 of line is smaller than Q1 Skills. Q3 is higher on both but skills are always higher than line.
+Q1 of line players push ups are smaller than Q1 Skills players push ups . Q3 is higher on both but skills player and line players are always higher than line.
 
 
 ### Graphical Descriptive Results
